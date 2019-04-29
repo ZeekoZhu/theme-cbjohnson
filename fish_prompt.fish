@@ -35,7 +35,7 @@ function fish_prompt
   end
 
   # Top
-  echo -n $cyan$USER$normal at $yellow$__fish_prompt_hostname$normal in $bred(prompt_pwd)$normal
+  echo -n $cyan(git config user.name)$normal at $yellow$__fish_prompt_hostname$normal in $bred(prompt_pwd)$normal
   __fish_git_prompt
 
   echo
